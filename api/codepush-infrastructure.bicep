@@ -79,3 +79,4 @@ resource scmBasicAuth 'Microsoft.Web/sites/basicPublishingCredentialsPolicies@20
     allow: true
   }
 }
+
