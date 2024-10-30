@@ -26,8 +26,8 @@ resource servicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
     reserved: true
   }
   sku: {
-    name: 'B1'
-    tier: 'Basic'
+    name: 'F1'
+    tier: 'Free'
   }
 }
 
@@ -53,7 +53,7 @@ resource webApp 'Microsoft.Web/sites@2022-03-01' = {
     httpsOnly: true
     siteConfig: {
       minTlsVersion: '1.2'
-      alwaysOn: true
+      alwaysOn: false
       linuxFxVersion: 'NODE|18-lts'
       scmType: 'LocalGit'
       appSettings: [
